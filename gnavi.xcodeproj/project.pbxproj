@@ -1,0 +1,700 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34F2A61FD66981DC24CCD4EE /* Pods_gnavi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DD8651EE33BAAFFC5E5352 /* Pods_gnavi.framework */; };
+		FA0F7B8522052B8A00A3324D /* RoundUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F7B8422052B8A00A3324D /* RoundUIView.swift */; };
+		FA34FB9E220491860057D70B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34FB9D220491860057D70B /* AppDelegate.swift */; };
+		FA34FBA0220491860057D70B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34FB9F220491860057D70B /* ViewController.swift */; };
+		FA34FBA3220491860057D70B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA34FBA1220491860057D70B /* Main.storyboard */; };
+		FA34FBA5220491880057D70B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA34FBA4220491880057D70B /* Assets.xcassets */; };
+		FA34FBA8220491880057D70B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA34FBA6220491880057D70B /* LaunchScreen.storyboard */; };
+		FA34FBB3220491880057D70B /* gnaviTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34FBB2220491880057D70B /* gnaviTests.swift */; };
+		FA34FBBE220491880057D70B /* gnaviUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34FBBD220491880057D70B /* gnaviUITests.swift */; };
+		FA34FBCC2204926E0057D70B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA34FBCB2204926E0057D70B /* CoreLocation.framework */; };
+		FA34FBCE2204930B0057D70B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34FBCD2204930B0057D70B /* TableViewController.swift */; };
+		FA34FBD02204934C0057D70B /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA34FBCF2204934C0057D70B /* CustomTableCell.swift */; };
+		FADDBE672207D9FF00E473E7 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDBE662207D9FF00E473E7 /* DetailTableViewController.swift */; };
+		FADDBE692207DA0E00E473E7 /* DetailCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADDBE682207DA0E00E473E7 /* DetailCustomCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA34FBAF220491880057D70B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA34FB92220491860057D70B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA34FB99220491860057D70B;
+			remoteInfo = gnavi;
+		};
+		FA34FBBA220491880057D70B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA34FB92220491860057D70B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA34FB99220491860057D70B;
+			remoteInfo = gnavi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15501FCDC6C88D9F7E533267 /* Pods-gnavi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gnavi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gnavi/Pods-gnavi.debug.xcconfig"; sourceTree = "<group>"; };
+		98840FA990CD880F9A1E0964 /* Pods-gnavi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gnavi.release.xcconfig"; path = "Pods/Target Support Files/Pods-gnavi/Pods-gnavi.release.xcconfig"; sourceTree = "<group>"; };
+		A9DD8651EE33BAAFFC5E5352 /* Pods_gnavi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gnavi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0F7B8422052B8A00A3324D /* RoundUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundUIView.swift; sourceTree = "<group>"; };
+		FA34FB9A220491860057D70B /* gnavi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gnavi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA34FB9D220491860057D70B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA34FB9F220491860057D70B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA34FBA2220491860057D70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA34FBA4220491880057D70B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA34FBA7220491880057D70B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA34FBA9220491880057D70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA34FBAE220491880057D70B /* gnaviTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gnaviTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA34FBB2220491880057D70B /* gnaviTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gnaviTests.swift; sourceTree = "<group>"; };
+		FA34FBB4220491880057D70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA34FBB9220491880057D70B /* gnaviUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gnaviUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA34FBBD220491880057D70B /* gnaviUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gnaviUITests.swift; sourceTree = "<group>"; };
+		FA34FBBF220491880057D70B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA34FBCB2204926E0057D70B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FA34FBCD2204930B0057D70B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FA34FBCF2204934C0057D70B /* CustomTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
+		FADDBE662207D9FF00E473E7 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		FADDBE682207DA0E00E473E7 /* DetailCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCustomCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA34FB97220491860057D70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA34FBCC2204926E0057D70B /* CoreLocation.framework in Frameworks */,
+				34F2A61FD66981DC24CCD4EE /* Pods_gnavi.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA34FBAB220491880057D70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA34FBB6220491880057D70B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BE950EF8E54EFDA3D818AEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA34FBCB2204926E0057D70B /* CoreLocation.framework */,
+				A9DD8651EE33BAAFFC5E5352 /* Pods_gnavi.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA21871CCEECEF206A4DCA77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15501FCDC6C88D9F7E533267 /* Pods-gnavi.debug.xcconfig */,
+				98840FA990CD880F9A1E0964 /* Pods-gnavi.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA0F7B8622052C1E00A3324D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FA0F7B8422052B8A00A3324D /* RoundUIView.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		FA34FB91220491860057D70B = {
+			isa = PBXGroup;
+			children = (
+				FA34FB9C220491860057D70B /* gnavi */,
+				FA34FBB1220491880057D70B /* gnaviTests */,
+				FA34FBBC220491880057D70B /* gnaviUITests */,
+				FA34FB9B220491860057D70B /* Products */,
+				EA21871CCEECEF206A4DCA77 /* Pods */,
+				4BE950EF8E54EFDA3D818AEA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA34FB9B220491860057D70B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA34FB9A220491860057D70B /* gnavi.app */,
+				FA34FBAE220491880057D70B /* gnaviTests.xctest */,
+				FA34FBB9220491880057D70B /* gnaviUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA34FB9C220491860057D70B /* gnavi */ = {
+			isa = PBXGroup;
+			children = (
+				FA0F7B8622052C1E00A3324D /* Extension */,
+				FA34FB9D220491860057D70B /* AppDelegate.swift */,
+				FA34FBCF2204934C0057D70B /* CustomTableCell.swift */,
+				FADDBE662207D9FF00E473E7 /* DetailTableViewController.swift */,
+				FADDBE682207DA0E00E473E7 /* DetailCustomCell.swift */,
+				FA34FB9F220491860057D70B /* ViewController.swift */,
+				FA34FBA1220491860057D70B /* Main.storyboard */,
+				FA34FBCD2204930B0057D70B /* TableViewController.swift */,
+				FA34FBA4220491880057D70B /* Assets.xcassets */,
+				FA34FBA6220491880057D70B /* LaunchScreen.storyboard */,
+				FA34FBA9220491880057D70B /* Info.plist */,
+			);
+			path = gnavi;
+			sourceTree = "<group>";
+		};
+		FA34FBB1220491880057D70B /* gnaviTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA34FBB2220491880057D70B /* gnaviTests.swift */,
+				FA34FBB4220491880057D70B /* Info.plist */,
+			);
+			path = gnaviTests;
+			sourceTree = "<group>";
+		};
+		FA34FBBC220491880057D70B /* gnaviUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA34FBBD220491880057D70B /* gnaviUITests.swift */,
+				FA34FBBF220491880057D70B /* Info.plist */,
+			);
+			path = gnaviUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA34FB99220491860057D70B /* gnavi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA34FBC2220491880057D70B /* Build configuration list for PBXNativeTarget "gnavi" */;
+			buildPhases = (
+				FDCD8EED4435325B082DC64B /* [CP] Check Pods Manifest.lock */,
+				FA34FB96220491860057D70B /* Sources */,
+				FA34FB97220491860057D70B /* Frameworks */,
+				FA34FB98220491860057D70B /* Resources */,
+				CF0C697218120F7D132DB3C2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gnavi;
+			productName = gnavi;
+			productReference = FA34FB9A220491860057D70B /* gnavi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA34FBAD220491880057D70B /* gnaviTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA34FBC5220491880057D70B /* Build configuration list for PBXNativeTarget "gnaviTests" */;
+			buildPhases = (
+				FA34FBAA220491880057D70B /* Sources */,
+				FA34FBAB220491880057D70B /* Frameworks */,
+				FA34FBAC220491880057D70B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA34FBB0220491880057D70B /* PBXTargetDependency */,
+			);
+			name = gnaviTests;
+			productName = gnaviTests;
+			productReference = FA34FBAE220491880057D70B /* gnaviTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA34FBB8220491880057D70B /* gnaviUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA34FBC8220491880057D70B /* Build configuration list for PBXNativeTarget "gnaviUITests" */;
+			buildPhases = (
+				FA34FBB5220491880057D70B /* Sources */,
+				FA34FBB6220491880057D70B /* Frameworks */,
+				FA34FBB7220491880057D70B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA34FBBB220491880057D70B /* PBXTargetDependency */,
+			);
+			name = gnaviUITests;
+			productName = gnaviUITests;
+			productReference = FA34FBB9220491880057D70B /* gnaviUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA34FB92220491860057D70B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Taro Kimura";
+				TargetAttributes = {
+					FA34FB99220491860057D70B = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FA34FBAD220491880057D70B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FA34FB99220491860057D70B;
+					};
+					FA34FBB8220491880057D70B = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FA34FB99220491860057D70B;
+					};
+				};
+			};
+			buildConfigurationList = FA34FB95220491860057D70B /* Build configuration list for PBXProject "gnavi" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA34FB91220491860057D70B;
+			productRefGroup = FA34FB9B220491860057D70B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA34FB99220491860057D70B /* gnavi */,
+				FA34FBAD220491880057D70B /* gnaviTests */,
+				FA34FBB8220491880057D70B /* gnaviUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA34FB98220491860057D70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA34FBA8220491880057D70B /* LaunchScreen.storyboard in Resources */,
+				FA34FBA5220491880057D70B /* Assets.xcassets in Resources */,
+				FA34FBA3220491860057D70B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA34FBAC220491880057D70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA34FBB7220491880057D70B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF0C697218120F7D132DB3C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-gnavi/Pods-gnavi-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gnavi/Pods-gnavi-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDCD8EED4435325B082DC64B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gnavi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA34FB96220491860057D70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FADDBE672207D9FF00E473E7 /* DetailTableViewController.swift in Sources */,
+				FA34FBA0220491860057D70B /* ViewController.swift in Sources */,
+				FA0F7B8522052B8A00A3324D /* RoundUIView.swift in Sources */,
+				FA34FBCE2204930B0057D70B /* TableViewController.swift in Sources */,
+				FA34FB9E220491860057D70B /* AppDelegate.swift in Sources */,
+				FA34FBD02204934C0057D70B /* CustomTableCell.swift in Sources */,
+				FADDBE692207DA0E00E473E7 /* DetailCustomCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA34FBAA220491880057D70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA34FBB3220491880057D70B /* gnaviTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA34FBB5220491880057D70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA34FBBE220491880057D70B /* gnaviUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA34FBB0220491880057D70B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA34FB99220491860057D70B /* gnavi */;
+			targetProxy = FA34FBAF220491880057D70B /* PBXContainerItemProxy */;
+		};
+		FA34FBBB220491880057D70B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA34FB99220491860057D70B /* gnavi */;
+			targetProxy = FA34FBBA220491880057D70B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA34FBA1220491860057D70B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA34FBA2220491860057D70B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA34FBA6220491880057D70B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA34FBA7220491880057D70B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA34FBC0220491880057D70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA34FBC1220491880057D70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA34FBC3220491880057D70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15501FCDC6C88D9F7E533267 /* Pods-gnavi.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z8F95TMEX;
+				INFOPLIST_FILE = gnavi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.gnavi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FA34FBC4220491880057D70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98840FA990CD880F9A1E0964 /* Pods-gnavi.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z8F95TMEX;
+				INFOPLIST_FILE = gnavi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.gnavi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FA34FBC6220491880057D70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z8F95TMEX;
+				INFOPLIST_FILE = gnaviTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.gnaviTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gnavi.app/gnavi";
+			};
+			name = Debug;
+		};
+		FA34FBC7220491880057D70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z8F95TMEX;
+				INFOPLIST_FILE = gnaviTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.gnaviTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gnavi.app/gnavi";
+			};
+			name = Release;
+		};
+		FA34FBC9220491880057D70B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z8F95TMEX;
+				INFOPLIST_FILE = gnaviUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.gnaviUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gnavi;
+			};
+			name = Debug;
+		};
+		FA34FBCA220491880057D70B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z8F95TMEX;
+				INFOPLIST_FILE = gnaviUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.self.gnaviUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = gnavi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA34FB95220491860057D70B /* Build configuration list for PBXProject "gnavi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA34FBC0220491880057D70B /* Debug */,
+				FA34FBC1220491880057D70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA34FBC2220491880057D70B /* Build configuration list for PBXNativeTarget "gnavi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA34FBC3220491880057D70B /* Debug */,
+				FA34FBC4220491880057D70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA34FBC5220491880057D70B /* Build configuration list for PBXNativeTarget "gnaviTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA34FBC6220491880057D70B /* Debug */,
+				FA34FBC7220491880057D70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA34FBC8220491880057D70B /* Build configuration list for PBXNativeTarget "gnaviUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA34FBC9220491880057D70B /* Debug */,
+				FA34FBCA220491880057D70B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA34FB92220491860057D70B /* Project object */;
+}
